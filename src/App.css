@@ -1,0 +1,162 @@
+.app-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.tracker-header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.tracker-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tracker-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+.status-message {
+  margin: 0.5rem 0 1rem;
+  text-align: left;
+}
+
+.period-toggle {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.period-button {
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 0.35rem 0.75rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.period-button.is-active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.status-message.error {
+  color: #b91c1c;
+}
+
+.low-price {
+  color: #16a34a;
+}
+
+.high-price {
+  color: #dc2626;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.summary-card,
+.chart-card,
+.table-card {
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.summary-card h2,
+.chart-card h2,
+.table-card h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.summary-card p {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.summary-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.chart-card {
+  margin-bottom: 1rem;
+}
+
+.chart-wrapper {
+  height: 320px;
+  margin-top: 1rem;
+  color: #2563eb;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 0.75rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+thead {
+  background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .summary-card,
+  .chart-card,
+  .table-card {
+    background-color: #111827;
+    border-color: #374151;
+  }
+
+  .status-message.error {
+    color: #fca5a5;
+  }
+
+  .summary-card span {
+    color: #9ca3af;
+  }
+
+  .period-button {
+    background: #111827;
+    border-color: #374151;
+    color: #e5e7eb;
+  }
+
+  .period-button.is-active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+  }
+
+  th,
+  td {
+    border-color: #374151;
+  }
+
+  thead {
+    background: #1f2937;
+  }
+}
